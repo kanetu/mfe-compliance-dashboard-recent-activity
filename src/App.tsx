@@ -1,6 +1,7 @@
 import React from "react";
+import "./styles/index.css";
 
-const RecentActivity = () => {
+const App = () => {
   const activities = [
     {
       timestamp: "2023-12-10 10:00",
@@ -21,7 +22,7 @@ const RecentActivity = () => {
 
   return (
     <div>
-      <h2>Recent Activity</h2>
+      <h2 className="text-[55px]">Recent Activity</h2>
       <table>
         <thead>
           <tr>
@@ -44,4 +45,4 @@ const RecentActivity = () => {
   );
 };
 
-export default RecentActivity;
+export default App;
