@@ -1,8 +1,13 @@
 import React from "react";
-import "./styles/index.css";
 
-const App = () => {
-  const activities = [
+interface Activity {
+  timestamp: string;
+  action: string;
+  user: string;
+}
+
+const App: React.FC = () => {
+  const activities: Activity[] = [
     {
       timestamp: "2023-12-10 10:00",
       action: 'Task "Complete Security Audit" updated',
@@ -21,22 +26,22 @@ const App = () => {
   ];
 
   return (
-    <div>
-      <h2 className="text-[55px]">Recent Activity</h2>
-      <table>
+    <div className="bg-white rounded p-4">
+      <h2 className="text-lg font-bold mb-4">Recent Activity</h2>
+      <table className="w-full">
         <thead>
-          <tr>
-            <th>Timestamp</th>
-            <th>Action</th>
-            <th>User</th>
+          <tr className="border-b">
+            <th className="text-left p-2">Timestamp</th>
+            <th className="text-left p-2">Action</th>
+            <th className="text-left p-2">User</th>
           </tr>
         </thead>
         <tbody>
           {activities.map((activity, index) => (
-            <tr key={index}>
-              <td>{activity.timestamp}</td>
-              <td>{activity.action}</td>
-              <td>{activity.user}</td>
+            <tr key={index} className="border-b">
+              <td className="p-2">{activity.timestamp}</td>
+              <td className="p-2">{activity.action}</td>
+              <td className="p-2">{activity.user}</td>
             </tr>
           ))}
         </tbody>
