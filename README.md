@@ -20,7 +20,7 @@ This module displays a log of recent compliance-related activities. It's a micro
 3.  **Start the development server:**
 
     ```bash
-    npm start
+    npm run dev
     ```
 
     The module will be available at `http://localhost:3003`.
