@@ -44,6 +44,8 @@ This module displays a log of recent compliance-related activities. It's a micro
 - React DOM
 - Webpack and Module Federation plugins
 - Tailwind CSS
+- Radix UI
+- Tanstack React Table
 
 ## Notes
 
